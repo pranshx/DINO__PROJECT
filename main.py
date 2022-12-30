@@ -11,7 +11,7 @@ from pygame import mixer
 mixer.init()
 
 # Loading the song
-mixer.music.load("sounds/backgroundmusic.mp3")
+mixer.music.load("backgroundmusic.mp3")
 
 # Setting the volume
 mixer.music.set_volume(0.7)
@@ -27,19 +27,19 @@ win = pygame.display.set_mode((1080, 700))
 pygame.display.set_caption("Dino Run")
 
 # Load images bg, sprites and obstacle
-bg_img = pygame.image.load('sprites\BG\desertBG.jpg')
+bg_img = pygame.image.load('desertBG.jpg')
 
-stationary = pygame.image.load(os.path.join("sprites\dino still", 'idle (1).png'))
-dinoRun = [pygame.image.load(os.path.join("sprites\dino run", 'Run (2).png')),
-           pygame.image.load(os.path.join("sprites\dino run", 'Run (5).png')),
-           pygame.image.load(os.path.join("sprites\dino run", 'Run (6).png'))]
+stationary = pygame.image.load(os.path.join("idle (1).png"))
+dinoRun = [pygame.image.load(os.path.join("Run (2).png")),
+           pygame.image.load(os.path.join("Run (5).png")),
+           pygame.image.load(os.path.join("Run (6).png"))]
 
-dinoJump = [pygame.image.load(os.path.join("sprites\dino jump", 'Jump (3).png')),
-            pygame.image.load(os.path.join("sprites\dino jump", 'Jump (12).png')),
-            pygame.image.load(os.path.join("sprites\dino jump", 'Run (1).png'))]
+dinoJump = [pygame.image.load(os.path.join("Jump (3).png")),
+            pygame.image.load(os.path.join("Jump (12).png")),
+            pygame.image.load(os.path.join("Run (1).png"))]
 
-smallcacta = [pygame.image.load('sprites\obstacle\obstacleCactus.png'),
-            pygame.image.load('sprites\obstacle\cactus2obstacle2.png'),]
+smallcacta = [pygame.image.load('obstacleCactus.png'),
+            pygame.image.load('cactus2obstacle2.png'),]
 
 largecacta = [pygame.image.load('sprites\obstacle\largecacta1.png'),
             pygame.image.load('sprites\obstacle\largecacta2.png'),]
